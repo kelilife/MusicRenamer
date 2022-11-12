@@ -77,6 +77,9 @@ namespace KeLi.MusicRenamer
 
                 var targetFilePath = Path.Combine(singerDirPath, fileName);
 
+                if (fileInfo.FullName == targetFilePath)
+                    continue;
+
                 if (File.Exists(targetFilePath))
                     File.Delete(targetFilePath);
 
