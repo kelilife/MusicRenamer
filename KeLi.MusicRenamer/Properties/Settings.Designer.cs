@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KeLi.MusicFolderBuilder.Properties {
+namespace KeLi.MusicRenamer.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -25,13 +25,25 @@ namespace KeLi.MusicFolderBuilder.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("*.mp3")]
-        public string FilterType {
+        [global::System.Configuration.DefaultSettingValueAttribute(".mp3;.flac;.wav")]
+        public string FilterTypes {
             get {
-                return ((string)(this["FilterType"]));
+                return ((string)(this["FilterTypes"]));
             }
             set {
-                this["FilterType"] = value;
+                this["FilterTypes"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[a-zA-Z0-9]")]
+        public string FilterRegex {
+            get {
+                return ((string)(this["FilterRegex"]));
+            }
+            set {
+                this["FilterRegex"] = value;
             }
         }
     }

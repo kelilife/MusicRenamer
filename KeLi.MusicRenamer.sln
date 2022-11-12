@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.MusicFolderBuilder", "KeLi.MusicFolderBuilder\KeLi.MusicFolderBuilder.csproj", "{4B2FEF3D-B69D-4943-9BBF-3E298C4A6440}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeLi.MusicRenamer", "KeLi.MusicRenamer\KeLi.MusicRenamer.csproj", "{4B2FEF3D-B69D-4943-9BBF-3E298C4A6440}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

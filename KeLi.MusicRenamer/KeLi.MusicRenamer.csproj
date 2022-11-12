@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4B2FEF3D-B69D-4943-9BBF-3E298C4A6440}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KeLi.MusicFolderBuilder</RootNamespace>
-    <AssemblyName>MusicFolderBuilder</AssemblyName>
+    <RootNamespace>KeLi.MusicRenamer</RootNamespace>
+    <AssemblyName>MusicRenamer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
