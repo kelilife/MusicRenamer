@@ -26,7 +26,13 @@ namespace KeLi.MusicRenamer
                 if (match.Success)
                 {
                     if (fileInfo.DirectoryName != appDirPath)
-                        File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    {
+                        if (File.Exists(Path.Combine(appDirPath, fileName)))
+                            File.Delete(fileInfo.FullName);
+
+                        else
+                            File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    }
 
                     continue;
                 }
@@ -34,7 +40,13 @@ namespace KeLi.MusicRenamer
                 if (fileName.Contains('_'))
                 {
                     if (fileInfo.DirectoryName != appDirPath)
-                        File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    {
+                        if (File.Exists(Path.Combine(appDirPath, fileName)))
+                            File.Delete(fileInfo.FullName);
+
+                        else
+                            File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    }
 
                     continue;
                 }
@@ -42,7 +54,13 @@ namespace KeLi.MusicRenamer
                 if (fileName.Contains('('))
                 {
                     if (fileInfo.DirectoryName != appDirPath)
-                        File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    {
+                        if (File.Exists(Path.Combine(appDirPath, fileName)))
+                            File.Delete(fileInfo.FullName);
+
+                        else
+                            File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    }
 
                     continue;
                 }
@@ -50,7 +68,13 @@ namespace KeLi.MusicRenamer
                 if (fileName.ToCharArray().Count(c => c == '.') != 1)
                 {
                     if (fileInfo.DirectoryName != appDirPath)
-                        File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    {
+                        if (File.Exists(Path.Combine(appDirPath, fileName)))
+                            File.Delete(fileInfo.FullName);
+
+                        else
+                            File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    }
 
                     continue;
                 }
@@ -58,7 +82,13 @@ namespace KeLi.MusicRenamer
                 if (fileName.ToCharArray().Count(c => c == '-') != 1)
                 {
                     if (fileInfo.DirectoryName != appDirPath)
-                        File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    {
+                        if (File.Exists(Path.Combine(appDirPath, fileName)))
+                            File.Delete(fileInfo.FullName);
+
+                        else
+                            File.Move(fileInfo.FullName, Path.Combine(appDirPath, fileName));
+                    }
 
                     continue;
                 }
